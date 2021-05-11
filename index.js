@@ -38,6 +38,7 @@ function run(fixFrom, fixTo) {
 
           for (const u in pkgLock.dependencies[r].dependencies[t].resolved) {
             if (
+              pkgLock.dependencies[r].dependencies[t].dependencies &&
               re.test(
                 pkgLock.dependencies[r].dependencies[t].dependencies[u].resolved
               )
