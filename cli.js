@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // self
 const run = require(".")
 
