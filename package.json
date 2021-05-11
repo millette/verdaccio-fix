@@ -1,12 +1,14 @@
 {
   "name": "verdaccio-fix",
   "version": "0.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "posttest": "npm run format",
     "format": "prettier --loglevel warn --write \"**/*.{js,json}\"",
     "prepare": "husky install"
+  },
+  "repository": "millette/verdaccio-fix",
+  "author": {
+    "name": "Robin Millette",
+    "email": "robin@millette.info"
   },
   "devDependencies": {
     "husky": "^6.0.0",
