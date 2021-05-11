@@ -35,6 +35,17 @@ function run(fixFrom, fixTo) {
           fixes.subDependencies++
           pkgLock.dependencies[r].dependencies[t].resolved =
             pkgLock.dependencies[r].dependencies[t].resolved.replace(re, fixTo)
+
+          for (const u in pkgLock.dependencies[r].dependencies[t].resolved) {
+            if (re.test(pkgLock.dependencies[r].dependencies[t].resolved)) {
+              fixes.subDependencies++
+              pkgLock.dependencies[r].dependencies[t].resolved =
+                pkgLock.dependencies[r].dependencies[t].resolved.replace(
+                  re,
+                  fixTo
+                )
+            }
+          }
         }
       }
     }
