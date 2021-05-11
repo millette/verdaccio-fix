@@ -1,6 +1,8 @@
 {
   "name": "verdaccio-fix",
   "version": "0.1.0",
+  "main": "index.js",
+  "bin": "cli.js",
   "scripts": {
     "format": "prettier --loglevel warn --write \"**/*.{js,json}\"",
     "prepare": "husky install"
