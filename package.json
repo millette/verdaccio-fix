@@ -5,7 +5,8 @@
   "bin": "cli.js",
   "scripts": {
     "format": "prettier --loglevel warn --write \"**/*.{js,json}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "verdaccio-fix": "node cli"
   },
   "repository": "millette/verdaccio-fix",
   "author": {
@@ -15,7 +16,7 @@
   "devDependencies": {
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "mrm": "^3.0.1",
+    "mrm": "^3.0.2",
     "prettier": "^2.3.0"
   },
   "lint-staged": {
