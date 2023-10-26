@@ -8,3 +8,6 @@ Thumbs.db
 *.log
 yarn.lock
 .husky/
+wrk/
+wrk-bu/
+
